@@ -1,0 +1,24 @@
+[package]
+name = "teler"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3.21"
+grammers-client = { git = "https://github.com/Lonami/grammers.git", branch = "master", features = ["markdown", "html"] }
+grammers-session = { git = "https://github.com/Lonami/grammers.git", branch = "master" }
+grammers-tl-types = { git = "https://github.com/Lonami/grammers.git", branch = "master" }
+home = "0.5.3"
+log = "0.4.14"
+sled = "0.34.7"
+tokio = { version = "1.17.0", features = ["rt", "signal", "rt-multi-thread"] }
+tui = "0.17.0"
+simple_logger = "2.1.0"
+color-eyre = { version = "0.6.0" }
+ctrlc = "3.2.1"
+dioxus = { version = "0.2.3", features = ["tui"] }
+dioxus-tui = "0.2.1"
+mod_use = "0.2.0"
+
